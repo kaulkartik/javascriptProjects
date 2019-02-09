@@ -1,0 +1,60 @@
+.alternate-font {
+   font-family: "Times New Roman", Times, serif;
+}
+
+.post-title
+{
+  color: #F90B6D;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px; font-weight: 300;
+  line-height: 32px; margin: 0 0 14px;
+}
+
+.side-menu-icon-text
+{
+  color: #F7F9F9;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 10px;
+  margin: 0 0 5px;
+}
+
+.post-office-icon
+{
+  display:inline-block;
+  margin-right:300px;
+}
+
+.post-office-icon-text
+{
+  display:inline-block;
+  font-family: 'Gill Sans', serif;
+  font-size: 42px; font-weight: 600;
+  line-height: 32px;
+  margin-right: 620px;
+}
+
+.loading {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.hiddenSpinner{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.flag-icon-in{
+  font-size: 40px;
+  font-weight: 100;
+  border-radius: 10%;
+}

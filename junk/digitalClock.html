@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clock</title>
+  <div id="japanclock">
+    <h1>Clock manager</h1>
+  </div>
+  <script type="text/javascript">
+  function startTime(){
+    var time = new Date();
+    var hours = time.getHours();
+    var minutes = time.getMinutes();
+    var seconds = time.getSeconds();
+
+    // formatted time
+    minutes = checkTime(minutes);
+    seconds = checkTime(seconds);
+
+    // filling the value of clock timeout
+    document.getElementById("timePlaceHolder").innerHTML = hours + " : " + minutes + " : " + seconds ;
+
+    var t = setTimeout(startTime, 500);
+    
+  }
+    // adding the digit 0 before the minutes and seconds if required .
+    function checkTime(timeValue){
+      if (timeValue < 10){
+        timeValue = "0" + timeValue;
+      }
+      return timeValue;
+    }
+
+  </script>
+</head>
+<body>
+  <div id="timePlaceHolder"></div>
+
+</body>
+</html>

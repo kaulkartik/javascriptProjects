@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link  rel = "stylesheet"  href = "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"  integrity = "sha384 - PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"  crossorigin = "anonymous" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" />
+  <script type="text/javascript" src="./postOffice.js">
+
+  </script>
+  <title>Post Office Finder</title>
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg bg-danger navbar-dark mb-3">
+    <div class="navbar-brand">
+      <i class="fab fa-usps fa-3x text-center post-office-icon nav-brand"></i>
+      <p class="post-office-icon-text text-warning text-uppercase">
+          The Indian Post </p>
+      <span class="flag-icon flag-icon-in"></span>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col-md-2 bg-warning  ">
+      <button class="btn btn-danger mt-2 ml-1 btn-block " type="button" data-toggle="collapse"
+        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <p class="side-menu-icon-text text-warning">Search By City-Code</p>
+      </button>
+      <button class="btn btn-danger mt-2 ml-1  btn-block " type="button" data-toggle="collapse"
+      data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+
+        <p class="side-menu-icon-text text-warning">Search By Pin-Code</p>
+      </button>
+    </div>
+    <div class="container col-md-10 " id="searchContainer">
+      <div class="card bg-warning mb-2">
+        <div class="card-body border border-danger rounded">
+          <form id="pinToCitySearchForm">
+            <div class="form-group md-6 col-8">
+              <label for="postOffices" class="text-danger alternate-font">Post Offices</label>
+              <input type="text" class="form-control form-control-lg border border-danger rounded" id="searchInputByName">
+            </div>
+            <div class="form-group col-6  d-flex p-6">
+              <button class="btn btn-danger btn-block text-warning">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2 bg-warning"></div>
+
+    <div class="container col-md-10 " id="cityToPostOfficeSearchContainer">
+      <div class="card bg-warning mb-3 mt-3">
+        <div class="card-body border border-danger rounded">
+          <form id="cityToPostOfficeSearchForm">
+            <div class="form-group md-6 col-8">
+              <label for="City" class="text-danger alternate-font ">City</label>
+              <input type="text" class="form-control form-control-lg border border-danger rounded" id="cityToPostOfficeInput">
+            </div>
+            <div class="form-group col-6 ">
+              <button class="btn btn-danger btn-block text-warning">
+              Search
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2 bg-warning border border-warning">
+    </div>
+    <div class="container col-md-10" id="outputContainer">
+      <div class="card bg-danger" id="outputCard">
+        <div class="row">
+          <div class="form-goup col-12">
+            <label for="Search Results" class="text-danger"> Search Results</label>
+          </div>
+        </div>
+        <div class="card-body text-light" id="outputCardBody">
+          <table id="cityTable" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <th class="th-sm">Post-Office Name</th>
+              </tr>
+            </thead>
+            <tbody id="cityTableBody">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src = "//cdn.datatables.net/1.10.16/js /dataTables.bootstrap4.min.js "> </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Filter Contents</title>
+</head>
+<body>
+  <script>
+  var personnel = [
+  {
+    id: 5,
+    name: "Luke Skywalker",
+    pilotingScore: 98,
+    shootingScore: 56,
+    isForceUser: true,
+    regiment : "Rajputana"
+  },
+  {
+    id: 82,
+    name: "Sabine Wren",
+    pilotingScore: 73,
+    shootingScore: 99,
+    isForceUser: false,
+    regiment : "Gurkha"
+  },
+  {
+    id: 22,
+    name: "Zeb Orellios",
+    pilotingScore: 20,
+    shootingScore: 59,
+    isForceUser: false,
+    regiment : "Punjab"
+  },
+  {
+    id: 15,
+    name: "Ezra Bridger",
+    pilotingScore: 43,
+    shootingScore: 67,
+    isForceUser: true,
+    regiment : "Punjab"
+  },
+  {
+    id: 11,
+    name: "Caleb Dume",
+    pilotingScore: 71,
+    shootingScore: 85,
+    isForceUser: true,
+    regiment : "JAK_LI"
+  },
+];
+  //const expensiveItems = cartItems.filter( cartItem => cartItem.price>10);
+
+  //const forcedUser = personnel.filter( personel => personel.isForceUser === true);
+
+  //const isGoodPilot = personnel.filter (personel => (personel.pilotingScore > 60 && personel.isForcedUser) === true )
+
+  const pilotNames = personnel.map(
+    function (personel){
+      console.log(personel.name);
+    }
+  );
+
+  //const pilotIds = personnel.map(person => `${person.id} - ${person.name}`);
+
+  const pilotIds = personnel.map(person => `${person.regiment}${person.id}` );
+
+  console.log(pilotIds);
+
+
+
+  </script>
+
+</body>
+</html>

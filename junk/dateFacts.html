@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=`device-width`, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <title>Date Facts</title>
+</head>
+<body>
+  <div id="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card text-white bg-danger mt-4 p-5">
+          <h1>Welcome to the great date facts ...</h1>
+          <input type="text" id="dateInput" maxlength=2 class="forrm-control form-contol-lg" placeholder="Please enter a date for a fact">
+          <input type="text" id="monthInput" maxlength=2 class="forrm-control form-contol-lg" placeholder="Please enter a date for a fact">
+          <input type="text" id="yearInput" maxlength=4 class="forrm-control form-contol-lg" placeholder="Please enter a date for a fact">
+          <div class="card-body" id="dateFact">
+            <h4>Date fact for you for the date entered </h4>
+            <div id="dateFactText">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    // date input
+    var dateInput = document.querySelector("#dateInput");
+    // date fact and date fact text .
+    var dateFact = document.querySelector('#dateFact');
+    var dateFactText = document.querySelector('#dateFactText');
+
+    function getDateByAjax(){
+      dateInputvalue = dateInput.value;
+
+      var xhr = new XMLHttpRequest();
+
+      xhr.open('GET', 'numbersapi.com/')
+    }
+  </script>
+</body>
+</html>
