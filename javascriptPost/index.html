@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Default meta tag and html markup -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- project css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- js-grid -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.css" />
+  <!-- main js -->
+  <script src="./main.js"> </script>
+  <title>Post App</title>
+</head>
+<!-- ipaddress API - key = 2f4db3a9402d5a979784ede878338076 -->
+<body class="text-center">
+  <!--  navigation panel -->
+  <nav class="navbar navbar-expand bg-primary navbar-dark text-center">
+    <div class="navbar-brand">
+      <h3 class="fa fa-search text-center">
+         Post APP
+      </h3>
+    </div>
+  </nav>
+<!-- main conatiner -->
+<div class="container mt-2">
+  <div class="card" id="ipSearchCard">
+    <div class="card-body" id="ipSearchCardBody">
+      <form action="" id="ipSearchForm">
+        <!-- <div class="row form-group">
+          <label for="" class="text-danger">Title</label>
+          <input type="text" class="form-control form-control-lg mb-2" id="title">
+        </div> -->
+        <!-- <div class="row form-group">
+          <label for="" class="text-danger">Title</label>
+          <input type="text" class="form-control form-control-lg mb-2" id="body">
+        </div> -->
+        <div class="row form-group">
+          <label for="" class="text-danger">
+              This app has Post capacity also. (Please refer the code.)
+          </label>
+        </div>
+
+        <div class="row form-group">
+          <button class="btn-primary mr-4" id="submit-button">
+            User Records
+          </button>
+          <button class="btn-primary" id="clear-button">
+            Clear Search Records
+          </button>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- output-container -->
+<div id="outputContainer">
+  <!-- <div class="card" id="searchOutputCard">
+    <div class="card-body" id="searchOutputCardBody">
+    </div>
+  </div> -->
+</div>
+</body>
+</html>
