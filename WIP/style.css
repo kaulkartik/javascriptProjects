@@ -1,0 +1,42 @@
+root{
+  --primary : #ddd;
+  --light : #ccc;
+  --red : #bc263e;
+  --dark : #333;
+  --shadow : 0 1px 5px rbga(104 , 104, 104 , 0.8)
+}
+
+
+html{
+  box-sizing: border-box;
+  font-family: Ariel,Helvetica, sans-serif;
+  color(--dark);
+
+}
+
+.nav-brand h4 {
+  color: var(--light);
+  margin-left: 35rem;
+}
+
+.container {
+  color: var(--primary);
+  padding: 2rem;
+  margin-top: 5rem;
+  margin-left: : 1rem;
+}
+
+#ipForm{
+  border: #ddd 1px solid;
+
+  font-weight: 300;
+  padding : 1rem;
+}
+
+ .container a{
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: bold;
+
+}

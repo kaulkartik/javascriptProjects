@@ -1,0 +1,17 @@
+
+
+Ordering & Orientation
+
+flex-direction : row | row reverse | colum | column reverse
+flex-wrap : no-wrap
+flex-flow
+order
+Alignment
+justify-content
+align-items
+align-self
+align-content
+Flexibility
+flex-grow
+flex-shrink
+flex-basis

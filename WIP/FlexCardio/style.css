@@ -1,0 +1,73 @@
+.container-1{
+  display: flex;
+  align-items: flex-start;/* flex-end  */
+
+  flex-direction: row;
+  /* row | row-reverse | column | column-reverse*/
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: stretch;
+  background: #ddd;
+  flex-wrap: nowrap;
+  /*
+  alignin the divs in the vertical direction.
+  flex-direction: column;
+  */
+}
+
+.container-1 h3{
+  border: 1px #ccc solid;
+  padding: 1em;
+}
+.container-2{
+  display: flex;
+  align-items: flex-start;
+}
+
+.container-2 div{
+  border: 3px #cccc solid ;
+  padding : 10px;
+}
+
+.container-1 div{
+  border: 1px #ccc solid ;
+  padding : 10px;
+}
+
+.box1{
+  flex:2;
+  order: 1;
+  align-content: flex-end;
+  border: 4px #ccc solid ;
+  padding : 2px;
+  width: 80%;
+  height : 20%;
+}
+
+.container-1 :hover{
+  color: #FF0000;
+  font-size: 20px;
+}
+
+p{
+  font-size: 14px;
+  font-family: helvetica verdana serif;
+  font-weight: bold;
+}
+.box2{
+  flex:1;
+  align-self: flex-start;
+  order: 2;
+  border: 4px #ccc solid ;
+  padding : 2px;
+
+}
+
+.box3{
+  flex:1;
+  order: 3;
+  align-self: flex-start;
+  align-content: center;
+  border: 4px #ccc solid ;
+  padding : 2px;
+}

@@ -1,0 +1,22 @@
+.container{
+  padding: 1px;
+  border: 1em;
+  border-color: #eee;
+  align-items: flex-start;
+}
+
+.postOffceNavigation{
+  background-color: #ff0000;
+}
+
+body{
+  background: #eee;
+  margin: 2px;
+}
+
+#navigationContainer a{
+  padding :1em;
+  color: #ddd;
+  font-size: 1em;
+  align-self: flex-start;
+}

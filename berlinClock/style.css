@@ -1,0 +1,8 @@
+.row {
+  display: flex;
+  margin: 3em;
+}
+
+.form-check-input{
+  margin :3em;
+}

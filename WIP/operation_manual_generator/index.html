@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" />
+  <title>Manual Generator</title>
+</head>
+<body>
+  <!--  navigation panel -->
+  <nav class="navbar navbar-expand bg-primary navbar-dark text-center">
+    <div class="navbar-brand">
+        Checkout operation Manul Generetor
+      </h3>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <div class="form">
+      <div class="card">
+          <div class="row form-group" id="row_1">
+            <div class="dropdown form-element">
+              <button class="btn btn-success form-control form-control-lg " type="button"  id="operatorLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Available Operators
+              </button>
+            </div>
+            <div>
+              <select class="form-control" aria-labelledby="operatorSelectButton" id="operatorSelect" class="form-control">
+                <option selected>Masaki Shindo</option>
+                <option>Karry</option>
+                <option>Rich</option>
+              </select>
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="dropdown form-element">
+              <button class="btn btn-success form-control form-control-lg " type="button" id="environmentLabel"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Environment
+              </button>
+            </div>
+            <div>
+              <select class="form-control  ml-3" aria-labelledby="environmentLabel" id="environmentSelect" class="form-control">
+                <option selected>PC</option>
+                <option>PC</option>
+                <option> SP & PC </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row form-group" id="row_3">
+        <button class="btn btn-success form-control form-control-lg " type="button" id="environmentLabel"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Branch
+        </button>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">First and last name</span>
+          </div>
+          <input type="text" aria-label="First name" class="form-control">
+        </div>
+        </div>
+            <div class="">
+              <button class="btn btn-success form-control form-control-lg form-control-expanded" type="button" id="generateManual"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Generate Operation Manual
+              </button>
+            </div>
+        </form>
+
+</body>
+</html>
